@@ -66,21 +66,31 @@ input, select, textarea {
 	appearance: none;
 }
 /* added by Nostradmsx */
+.centered-image{
+	text-align: center;
+}
+#header_logo{
+float: left;
+height: 50px;
+margin-top:10px;
+margin-left: 20px;
+margin-right: 20px;
+}
 #mylogo{
 	height: 80px;
 	float: left;
 	padding-right: 30px;
 }
 #roy{
+margin: 100px;
+float: right;
 	width: 190px;
-	/* float: inline-start; */
-	margin-right: 10px;
 }
 #recorded_bliss{
 	width: 90%;
 }
-.aboutme{
-	margin-left: 20px;
+#aboutme{
+	margin-left: 120px;
 }
 .responsive{
 	width: 100%;
@@ -2680,7 +2690,8 @@ input, select, textarea {
 
 		ul.contact li {
 			text-decoration: none;
-			margin: 2.5em 0 0 0;
+			/* margin: 2.5em 0 0 0; */
+			margin: 10px 0 0 0;
 			padding: 0 0 0 3.25em;
 			position: relative;
 		}
