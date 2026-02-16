@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Home</title>
+    <title>DMSecurityX - Cybersecurity Resources for Small Businesses & Creators</title>
     <meta charset="utf-8" />
+    <meta name="description" content="Professional cybersecurity guidance and free resources for small businesses, content creators, and website owners. Expert checklists, tools, and strategies to protect your digital assets." />
+    <meta name="keywords" content="cybersecurity, small business security, website security, security checklists, OWASP, cyber protection, DMSecurityX" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, user-scalable=no"
@@ -18,6 +20,27 @@
       a.image.no-circle img,
       #recorded_bliss {
         border-radius: 0 !important;
+      }
+      
+      /* Banner logo styling */
+      #banner .logo {
+        float: left;
+        width: 120px;
+        height: 120px;
+        margin-right: 2rem;
+        margin-bottom: 1rem;
+      }
+      
+      #banner .inner {
+        overflow: auto;
+      }
+      
+      @media screen and (max-width: 736px) {
+        #banner .logo {
+          float: none;
+          display: block;
+          margin: 0 auto 1.5rem auto;
+        }
       }
       
       /* Hide horizontal menu on mobile by default */
@@ -132,8 +155,7 @@
       <!-- Banner -->
       <section id="banner">
         <div class="inner">
-          <!-- <div class="logo">i</div> -->
-          <!-- <img id="mylogo" class="logo" src="../../images/logo.jpg"/> -->
+          <img class="logo" src="images/logo.png" alt="DMSecurityX Logo" />
           <h2>DMSecurityX</h2>
           <p>Modern threats require deliberate solutions. Explore our curated library of cybersecurity resources—from step-by-step checklists to expert guides—designed to empower small businesses and creators with professional-grade security.
           </p>
@@ -142,45 +164,80 @@
 
       <!-- Wrapper -->
       <section id="wrapper">
-        <!-- One -->
-        <section id="one" class="wrapper spotlight style1">
+        <!-- Features Section -->
+        <section class="wrapper alt style1">
           <div class="inner">
-            <a href="#" class="image"
-              ><img src="./images/nostra.png" class="fade" alt=""
+            <h2 class="major">What We Offer</h2>
+            <p>Comprehensive cybersecurity resources tailored to your specific needs, completely free and accessible to everyone.</p>
+            <section class="features">
+              <article>
+                <a href="checklist.html" class="image"><img src="./images/checklist.png" alt="" /></a>
+                <h3 class="major">Security Checklists</h3>
+                <p>Curated security checklists for small businesses, bloggers, personal websites, and self-hosted server owners. Practical, actionable guidance you can implement today.</p>
+                <a href="checklist.html" class="special">View Checklists</a>
+              </article>
+              <article>
+                <a href="https://blog.deliberatecybersecurity.com" target="_blank" class="image"><img src="./images/blog.jpg" alt="" /></a>
+                <h3 class="major">Expert Blog</h3>
+                <p>In-depth articles on cybersecurity trends, threat analysis, best practices, and real-world solutions from experienced professionals in the field.</p>
+                <a href="https://blog.deliberatecybersecurity.com" target="_blank" class="special">Read Blog Posts</a>
+              </article>
+              <article>
+                <a href="https://start.me/p/5krPwz/cybersecurity-ctfs-tools" target="_blank" class="image"><img src="./images/tools.jpg" alt="" /></a>
+                <h3 class="major">Tools & Resources</h3>
+                <p>A comprehensive collection of free security tools, CTF challenges, learning platforms, and resources to enhance your cybersecurity knowledge.</p>
+                <a href="https://start.me/p/5krPwz/cybersecurity-ctfs-tools" target="_blank" class="special">Explore Resources</a>
+              </article>
+              <article>
+                <a href="nostradmsx.html" class="image"><img src="./images/portfolio_ss.jpg" alt="" /></a>
+                <h3 class="major">Expert Guidance</h3>
+                <p>Over a decade of IT experience in product development, service delivery, and cybersecurity advocacy, distilled into practical, accessible advice.</p>
+                <a href="nostradmsx.html" class="special">About the Author</a>
+              </article>
+            </section>
+          </div>
+        </section>
+
+        <!-- One -->
+        <section id="one" class="wrapper spotlight style2">
+          <div class="inner">
+            <a href="nostradmsx.html" class="image"
+              ><img src="./images/nostra.png" class="fade" alt="NostradmsX profile"
             /></a>
             <div class="content">
-              <h2 class="major">NostradmsX - Technology & Security Advocate</h2>
+              <h2 class="major">Meet NostradmsX</h2>
               <p>
-                NostradmsX is a pseudonym of the originator of DMSecurityX. Roy
-                Garcia has been working in IT for more than a decade, developing
-                products, providing services, and advocating cybersecurity. His
-                journey has not been an easy one, but meaningful nevertheless.
+                Behind DMSecurityX is NostradmsX, a pseudonym of Roy Garcia—a seasoned IT professional with over a decade of experience in software development, cybersecurity, and technology advocacy. His mission is to democratize cybersecurity knowledge, making professional-grade protection accessible to everyone, regardless of budget or technical expertise.
+              </p>
+              <p>
+                From working with enterprise systems to helping small businesses secure their digital presence, Roy brings real-world experience and a passion for empowering others through education and practical tools.
               </p>
               <a href="nostradmsx.html" class="special"
-                >Learn more about NostradmsX's journey ...</a
+                >Learn more about the journey ...</a
               >
             </div>
           </div>
         </section>
 
         <!-- Two -->
-        <section id="two" class="wrapper alt spotlight style2">
+        <section id="two" class="wrapper spotlight style3">
           <div class="inner">
-            <a href="#" class="image no-circle"
+            <a href="https://www.recordedbliss.com" target="_blank" class="image no-circle"
               ><img
                 id="recorded_bliss"
                 class="fade"
                 src="./images/recordedbliss.jpg"
-                alt=""
+                alt="Recorded Bliss music project"
             /></a>
             <div class="content">
-              <h2 class="major">Recorded Bliss</h2>
+              <h2 class="major">Beyond Security: Recorded Bliss</h2>
               <p>
-                Recorded Bliss is a repository of lyrics and melodies that were
-                written by Roy Garcia to extend the ephermality of his blissful
-                experiences.
+                When not securing digital landscapes, Roy channels his creativity into Recorded Bliss—a collection of original songs and melodies that capture life's fleeting moments of joy and reflection. Music and code share a common language: patterns, structure, and the pursuit of something meaningful.
               </p>
-              <a href="https://www.recordedbliss.com" class="special"
+              <p>
+                Explore a different side of the mind behind DMSecurityX, where technical precision meets artistic expression.
+              </p>
+              <a href="https://www.recordedbliss.com" target="_blank" class="special"
                 >Listen to Recorded Bliss ...</a
               >
             </div>
