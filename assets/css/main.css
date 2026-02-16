@@ -67,7 +67,10 @@ input, select, textarea {
 }
 /* added by Nostradmsx */
 .centered-image{
-	text-align: center;
+	display: block;
+	float: center;
+	margin-left: auto;
+	margin-right: auto;
 }
 #header_logo{
 float: left;
@@ -93,8 +96,15 @@ float: right;
 	margin-left: 120px;
 }
 .responsive{
+	max-width: 100%;
 	width: 100%;
 	height: auto;
+}
+.features{
+	text-align: center;
+}
+.features a{
+	display: inline-block;
 }
 /* Basic */
 
