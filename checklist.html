@@ -28,6 +28,78 @@
         border-color: rgba(255, 255, 255, 0.3);
         transform: translateY(-2px);
       }
+      
+      /* Hide horizontal menu on mobile by default */
+      .horizontal-menu {
+        display: none;
+      }
+      
+      /* Horizontal menu for tablets and desktop */
+      @media screen and (min-width: 981px) {
+        /* Hide hamburger menu button on desktop */
+        #header nav > a[href="#menu"] {
+          display: none !important;
+        }
+        
+        /* Adjust header nav to accommodate horizontal menu */
+        #header nav {
+          height: auto !important;
+          width: auto !important;
+        }
+        
+        /* Show horizontal menu in header with tab styling */
+        #header nav .horizontal-menu {
+          display: flex !important;
+          flex-direction: row;
+          gap: 0;
+          margin: 0;
+          padding: 0;
+          list-style: none;
+          align-items: stretch;
+          border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        #header nav .horizontal-menu li {
+          margin: 0;
+          padding: 0;
+          display: inline-block;
+        }
+        
+        #header nav .horizontal-menu a {
+          color: #ffffff !important;
+          text-decoration: none;
+          border-bottom: 0 !important;
+          transition: all 0.2s ease;
+          padding: 0.75rem 1.5rem;
+          display: inline-block;
+          background: rgba(255, 255, 255, 0.03);
+          border: 1px solid rgba(255, 255, 255, 0.1);
+          border-bottom: none;
+          border-radius: 5px 5px 0 0;
+          margin-right: 2px;
+          position: relative;
+          bottom: -2px;
+        }
+        
+        #header nav .horizontal-menu a:hover {
+          background: rgba(255, 255, 255, 0.08);
+          border-color: rgba(255, 255, 255, 0.2);
+          border-bottom: none !important;
+          bottom: -2px;
+        }
+        
+        #header nav .horizontal-menu a.active,
+        #header nav .horizontal-menu a[href="checklist.html"] {
+          background: rgba(255, 255, 255, 0.12);
+          border-color: rgba(255, 255, 255, 0.3);
+          border-bottom: 2px solid transparent;
+        }
+        
+        /* Hide mobile slide-out menu on desktop */
+        #menu {
+          display: none !important;
+        }
+      }
     </style>
   </head>
   <body class="is-preload">
@@ -35,10 +107,18 @@
     <div id="page-wrapper">
       <!-- Header -->
       <header id="header">
-        <img id="header_logo" src="images/logo.jpg" />
+        <img id="header_logo" src="images/logo.png" />
         <h1><a href="index.html">DMSecurityX</a></h1>
         <nav>
           <a href="#menu">Menu</a>
+          <ul class="horizontal-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="nostradmsx.html">nostradmsx</a></li>
+            <li><a href="https://blog.deliberatecybersecurity.com" target="_blank">My Blog</a></li>
+            <li><a href="checklist.html">Checklist</a></li>
+            <li><a href="https://start.me/p/5krPwz/cybersecurity-ctfs-tools" target="_blank">Resources</a></li>
+            <li><a href="https://recordedbliss.com" target="_blank">Music</a></li>
+          </ul>
         </nav>
       </header>
 
